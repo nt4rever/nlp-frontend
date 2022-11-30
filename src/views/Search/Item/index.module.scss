@@ -1,0 +1,50 @@
+.item {
+  box-shadow: 0 0 1.25rem rgb(108 118 134 / 10%);
+  background: #ffffff;
+  margin-bottom: 10px;
+
+  a {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333333;
+    padding: 12px 20px 12px 55px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    border-bottom: 1px solid transparent;
+
+    span {
+      height: 100%;
+      width: 45px;
+      position: absolute;
+      background-color: #ff4800;
+      color: #ffffff;
+      padding: 12px;
+      top: 0;
+      left: 0;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &.active a {
+    border-bottom-color: #eeeeee;
+  }
+
+  .accordion-content {
+    transition: height 0.3s;
+    height: 0px;
+    overflow: hidden;
+
+    p {
+      padding: 10px 15px;
+      margin: 0;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+}

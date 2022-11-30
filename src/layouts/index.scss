@@ -1,0 +1,49 @@
+.app__layout {
+  background: #f5fcfe;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.btn {
+  padding: 10px 32px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background: $color-orange;
+  color: #fff;
+
+  &:hover {
+    background: $color-green;
+  }
+}
+
+.video-btn {
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+
+  .play-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: linear-gradient(320.56deg, #074ece 0%, #4d8cff 100%);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    padding-left: 5px;
+    margin-right: 8px;
+  }
+}
+
+span.text-marker {
+  color: #437fec;
+  text-decoration: underline;
+}

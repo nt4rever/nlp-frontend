@@ -1,0 +1,90 @@
+.container {
+  padding: 50px 20px;
+  position: relative;
+
+  .content {
+    margin: 0 auto;
+    width: max(40%, 300px);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+
+    h2 {
+      font-size: 35px;
+      font-weight: bold;
+      margin-bottom: 0;
+      font-weight: 600;
+      z-index: 10;
+    }
+
+    .form {
+      margin-top: 20px;
+      position: relative;
+
+      input {
+        display: block;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: -3px 8px 20px rgb(67 127 236 / 5%);
+        border: none;
+        height: 55px;
+        padding-left: 28px;
+        border-radius: 70px;
+        outline: 0;
+        color: #57647c;
+        font-weight: 500;
+        font-size: 15px;
+      }
+
+      .num {
+        width: 100px;
+        position: absolute;
+        top: 0;
+        right: 77px;
+        font-weight: 700;
+        box-shadow: -1px -2px 20px 3px rgb(0 0 0 / 5%);
+      }
+
+      button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #ff4800;
+        color: #ffffff;
+        border: none;
+        height: 55px;
+        padding: 0 35px;
+        border-radius: 70px;
+        transition: 0.5s;
+        line-height: 55px;
+        font-family: "Dosis", sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+        &:hover {
+          background-color: $color-green;
+        }
+      }
+    }
+  }
+
+  .ai-subscribe-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.result {
+  position: relative;
+  margin: 50px 0;
+  z-index: 1;
+}
+
+.list {
+  margin: 0 auto;
+  width: 50%;
+}

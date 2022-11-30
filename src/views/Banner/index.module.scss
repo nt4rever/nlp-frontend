@@ -1,0 +1,138 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: translateY(-30px);
+  padding: 0 20px 70px 20px;
+
+  .text {
+    max-width: max(400px, calc(100% - 400px));
+    text-align: center;
+    z-index: 2;
+    h1 {
+      font-size: 60px;
+      font-weight: 500;
+      line-height: 70px;
+    }
+
+    .wrap__text {
+      margin: 0 auto;
+      padding: 0 150px;
+      color: #57647c;
+    }
+  }
+}
+
+.container .image {
+  &__shape--1 {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    animation: shape-1-rotate 12s linear infinite;
+  }
+
+  @keyframes shape-1-rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  &__shape--2 {
+    position: absolute;
+    top: 0;
+    right: 15%;
+    animation: shape-2-ring 12s linear infinite;
+    transform-origin: 100% -100%;
+  }
+
+  @keyframes shape-2-ring {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  &__shape--3 {
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+    animation: animationFramesOne 12s linear infinite;
+    transform: translateY(-10%) translateX(-35%);
+    transform-origin: 100% -100%;
+  }
+
+  @keyframes animationFramesOne {
+    0% {
+      transform: translate(0px, 0px) rotate(0deg);
+    }
+    20% {
+      transform: translate(-73px, 1px) rotate(-36deg);
+    }
+    40% {
+      transform: translate(-141px, -72px) rotate(-72deg);
+    }
+    60% {
+      transform: translate(-83px, -122px) rotate(-108deg);
+    }
+    80% {
+      transform: translate(40px, -72px) rotate(-144deg);
+    }
+    100% {
+      transform: translate(0px, 0px) rotate(0deg);
+    }
+  }
+
+  &__banner {
+    position: absolute;
+    width: 30%;
+    left: 0;
+    bottom: 0;
+
+    &.right {
+      right: 0;
+      left: inherit;
+    }
+
+    img {
+      position: relative;
+      max-width: 100%;
+      height: auto;
+      z-index: 1;
+    }
+
+    .circle-shape {
+      width: 450px;
+      height: 300px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      z-index: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -150px;
+    }
+
+    &.right .circle-shape {
+      right: -150px;
+      left: auto;
+    }
+  }
+}
+
+.container .button__group {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  li {
+    display: flex;
+    list-style: none;
+  }
+}

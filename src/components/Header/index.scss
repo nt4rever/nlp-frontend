@@ -1,0 +1,167 @@
+.contact-infomation {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 15px 30px;
+  margin: 0;
+  color: #212529;
+  font-weight: 500;
+  background: #fff;
+  box-shadow: 0px 6px 15px rgb(71 113 188 / 7%);
+  z-index: 10;
+  position: relative;
+
+  &__right {
+    display: flex;
+
+    &__item {
+      position: relative;
+      margin-left: 40px;
+      & a {
+        text-decoration: none;
+        color: #212529;
+        transition: 0.2s;
+
+        &:hover {
+          color: $color-green;
+        }
+      }
+
+      & i {
+        position: absolute;
+        color: $color-orange;
+        top: 3px;
+        left: -20px;
+      }
+
+      &:last-child:after {
+        content: none;
+      }
+
+      &:after {
+        position: absolute;
+        content: "";
+        width: 4px;
+        height: 100%;
+        top: 0;
+        right: -12px;
+        background: #e4e7fb;
+      }
+    }
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  height: 70px;
+  position: relative;
+  z-index: 1;
+
+  &__left {
+    display: flex;
+    justify-content: center;
+    &__logo {
+      margin: auto 0;
+    }
+  }
+
+  &__right {
+    display: flex;
+
+    &__nav {
+      display: flex;
+
+      .item {
+        padding: 5px 20px;
+        font-size: 15px;
+        font-weight: 500;
+        margin: auto;
+        cursor: pointer;
+
+        &.active {
+          color: $color-orange;
+        }
+      }
+    }
+
+    &__search {
+      margin: auto 15px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      position: relative;
+
+      .icon {
+        width: 25px;
+      }
+
+      &:hover {
+        color: $color-orange;
+      }
+
+      .search_box {
+        position: absolute;
+        right: 0;
+        top: 150%;
+        background: #fff;
+        padding: 15px 15px;
+        box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+        visibility: hidden;
+
+        &.active {
+          visibility: visible;
+          animation: show 0.3s;
+        }
+
+        @keyframes show {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
+        input {
+          padding: 7px 3px;
+          font-size: 15px;
+          border: 1px solid #e4e7fb;
+          border-radius: 2px;
+          color: #57647c;
+
+          &:focus {
+            outline: 1px solid $color-orange;
+          }
+
+          &::placeholder {
+            color: #a5a5a5;
+          }
+        }
+      }
+    }
+
+    &__button {
+      display: flex;
+      justify-content: center;
+      margin: 2px 5px;
+
+      button {
+        color: $color-orange;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 25px;
+        border: none;
+        padding: 0 15px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+
+        &:hover {
+          color: #fff;
+          background: $color-orange;
+        }
+      }
+    }
+  }
+}

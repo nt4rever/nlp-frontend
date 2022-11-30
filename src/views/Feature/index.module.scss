@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  padding: 50px 20px;
+  background: #fff;
+  justify-content: space-around;
+
+  .item {
+    max-width: 25%;
+
+    .top-featured-content {
+      h3 {
+        font-size: 30px;
+        margin: 0;
+      }
+      p {
+        color: #57647c;
+        margin-bottom: 20px;
+        font-size: 14px;
+      }
+    }
+
+    .top-featured-card {
+      background: #f5fcfe;
+      padding: 30px 40px;
+      height: 100%;
+      margin-bottom: 20px;
+      border-radius: 3px;
+
+      a {
+        color: #333333;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+      }
+
+      h3 a:hover {
+        color: $color-orange;
+      }
+
+      &:hover {
+        .image-icon {
+          animation: bounce 0.7s forwards;
+        }
+
+        .button {
+          color: $color-orange;
+        }
+      }
+
+      .image-icon {
+        background: #fff;
+        display: inline-block;
+        padding: 15px 20px;
+        border-radius: 50%;
+        box-shadow: -3px 8px 20px rgb(67 127 236 / 5%);
+        img {
+          width: 60px;
+          height: 60px;
+          text-align: center;
+        }
+      }
+
+      .button {
+        padding: 10px 25px;
+        background: #fff;
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: 500;
+        box-shadow: -3px 8px 20px rgb(67 127 236 / 5%);
+        transition: all 0.2s ease-in-out;
+      }
+
+      @keyframes bounce {
+        0% {
+          opacity: 0;
+          transform: scale(0.4);
+          background: linear-gradient(0deg, #ffc2cc 0%, #fff2f4 100%);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(0.9) rotate(-20deg);
+          background: linear-gradient(0deg, #ffc2cc 0%, #fff2f4 100%);
+        }
+
+        70% {
+          transform: scale(1) rotate(5deg);
+          background: linear-gradient(0deg, #ffc2cc 0%, #fff2f4 100%);
+        }
+
+        100% {
+          transform: scale(1) rotate(0deg);
+          background: linear-gradient(0deg, #ffc2cc 0%, #fff2f4 100%);
+        }
+      }
+    }
+  }
+}
