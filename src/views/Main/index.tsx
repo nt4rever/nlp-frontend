@@ -1,4 +1,5 @@
 import Banner from "../Banner";
+import CalcSimilar from "../CalcSimilar";
 import Cluster from "../Cluster";
 import Feature from "../Feature";
 import Footer from "../Footer";
@@ -13,6 +14,7 @@ const Main = () => {
       <Statistic />
       <Feature />
       <Search />
+      <CalcSimilar />
       <Cluster />
       <Footer />
     </div>

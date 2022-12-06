@@ -30,7 +30,7 @@ const Cluster = () => {
     <>
       <div className={styles["container"]}>
         <div className={styles["title"]}>
-          <h3>Do You Have Any Questions?</h3>
+          <h3>Clustering sentence embeddings</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -67,7 +67,7 @@ const Cluster = () => {
                 className="btn btn-primary"
                 onClick={handlePlotCluster}
               >
-                Submit
+                Visualize
               </a>
             </div>
           </div>

@@ -21,16 +21,18 @@ const Search = () => {
     };
     const question = target.question.value;
     const num = target.num.value;
-    const data = await querySimilarityQuestion(question, num ? num : 5);
-    if (typeof data !== "string") {
-      setQuestions(data);
+    if (question !== "") {
+      const data = await querySimilarityQuestion(question, num ? num : 5);
+      if (typeof data !== "string") {
+        setQuestions(data);
+      }
     }
   };
 
   return (
     <div className={styles["container"]}>
       <div className={styles["content"]}>
-        <h2>Get The Best Blog Stories Into Your Inbox!</h2>
+        <h2>Search similar Java interview question</h2>
         <form action="#" className={styles["form"]} onSubmit={handleFormSubmit}>
           <input
             type="text"

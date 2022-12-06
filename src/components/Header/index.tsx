@@ -12,20 +12,20 @@ const Header = () => {
 
   return (
     <>
-      <div className="contact-infomation">
-        <div className="contact-infomation__left">Welcome to Albion</div>
-        <div className="contact-infomation__right">
-          <div className="contact-infomation__right__item">
+      <div className="contact-information">
+        <div className="contact-information__left">Welcome to Albion</div>
+        <div className="contact-information__right">
+          <div className="contact-information__right__item">
             <i className="fa fa-location-arrow"></i>
             <span>2750 Quadra Street Victoria, Canada</span>
           </div>
-          <div className="contact-infomation__right__item">
+          <div className="contact-information__right__item">
             <a href="#">
               <i className="fa-solid fa-phone-flip"></i>
               <span>+84336757208</span>
             </a>
           </div>
-          <div className="contact-infomation__right__item">
+          <div className="contact-information__right__item">
             <a href="#">
               <i className="fa-solid fa-envelope"></i>
               <span>levantanald@gmail.com</span>
